@@ -27,7 +27,7 @@ public class LinkedList01 {
 		System.out.println(firstElement2);
 		System.out.println(ll1);
 		
-		String firstElementFromEmptyLL1 = ll1.peek(); // peek() returns the first element without removing it, if the list is empty
+//		String firstElementFromEmptyLL1 = ll1.peek(); // peek() returns the first element without removing it, if the list is empty
 		// there will be NoSuchElementException
 		
 	}
