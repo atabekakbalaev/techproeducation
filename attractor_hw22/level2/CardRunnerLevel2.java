@@ -27,12 +27,15 @@ public class CardRunnerLevel2 {
 		deck.printDeck();
 		printDivider();
 		
-		System.out.println("Can I get " + random_card + " from deck again?");
-		deck.getCardFromDeck(random_card);
+		System.out.println("Can I get " + random_card + " from deck again? " + deck.canTakeThisCardFromDeck(random_card));
 		printDivider();
 		
+		// Testing if a specific card can be put back to the deck if it exists in the deck
 		Card c = new Card(suits[0], values[0]);
 		deck.putCardToDeck(c);
+		
+		printDivider();
+		System.out.println("Can I put " + random_card + " to deck? " + deck.canPutThisCardBackToDeck(random_card));
 		
 	}
 	
